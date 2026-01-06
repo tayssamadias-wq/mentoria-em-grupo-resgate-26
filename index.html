@@ -55,23 +55,6 @@
             box-shadow: 0 20px 40px rgba(74, 14, 28, 0.05);
         }
 
-        /* Foto do Hero com Interação */
-        .hero-img-container {
-            position: relative;
-            z-index: 10;
-        }
-        .hero-img-container::before {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 120%;
-            height: 80%;
-            background: radial-gradient(circle, rgba(180,155,106,0.1) 0%, transparent 70%);
-            z-index: -1;
-        }
-
         /* FAQ Estilo Minimalista */
         details summary::-webkit-details-marker { display: none; }
         details[open] summary { color: var(--dourado); }
@@ -79,8 +62,9 @@
 </head>
 <body>
 
-    <section class="bg-marsala text-white relative min-h-screen flex items-center overflow-hidden">
-        <div class="container mx-auto px-6 lg:px-20 z-10 pt-20">
+    <section class="bg-marsala text-white relative pt-24 pb-20 lg:pt-32 lg:pb-32 overflow-hidden">
+        
+        <div class="container mx-auto px-6 lg:px-20 z-10">
             <div class="max-w-4xl mx-auto text-center flex flex-col items-center">
                 
                 <span class="text-white opacity-60 uppercase tracking-[0.4em] text-[10px] mb-6 block font-light">Uma Mentoria em Grupo de 8 Semanas</span>
@@ -101,7 +85,7 @@
                 <p class="mt-6 text-[10px] uppercase tracking-widest text-gray-500 italic">Baseado na Psicodinâmica e no Método DCA</p>
                 
             </div>
-            </div>
+        </div>
     </section>
 
     <section class="py-32 px-6 bg-[#FAF6F0]">
@@ -146,9 +130,4 @@
         </div>
     </section>
 
-    <section class="bg-marsala text-white py-32 px-6">
-        <div class="max-w-4xl mx-auto text-center">
-            <span class="text-[#B49B6A] uppercase tracking-[0.4em] text-[10px] mb-6 block">A Verdade Oculta</span>
-            <h2 class="text-3xl md:text-5xl italic font-light mb-12">Por que "Dicas de Sedução" <br>nunca funcionaram para você</h2>
-            <div class="space-y-8 text-gray-300 font-light leading-relaxed text-lg">
-                <p>Feminilidade não é uma skill (habilidade) que você treina. <br><span class="text-white
+    <section
