@@ -5,163 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O Resgate do Feminino | Tayssa Machado</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@200;300;400;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Montserrat', sans-serif; scroll-behavior: smooth; }
-        h1, h2, h3 { font-family: 'Playfair Display', serif; }
-        .bg-vinho { background-color: #5D182E; }
-        .bg-bege { background-color: #F5F1E6; }
-        .text-vinho { color: #5D182E; }
-        .text-dourado { color: #D4AF37; }
-        .border-dourado { border-color: #D4AF37; }
-        .btn-gradiente { 
-            background: linear-gradient(135deg, #D4AF37 0%, #B8962E 100%); 
-            transition: all 0.3s ease; 
+        :root {
+            --vinho-deep: #430F1E;
+            --vinho-bright: #5D182E;
+            --dourado-soft: #C5A059;
+            --bege-luxury: #F9F7F2;
         }
-        .btn-gradiente:hover { 
-            transform: scale(1.03); 
-            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.4); 
-        }
-        /* Efeito de iluminação atrás da foto no Hero */
-        .hero-glow {
-            background: radial-gradient(circle, rgba(212,175,55,0.15) 0%, rgba(93,24,46,0) 70%);
-        }
-    </style>
-</head>
-<body class="bg-bege text-gray-900">
-
-    <!-- SEÇÃO 1: HERO (A PROMESSA) -->
-    <section class="bg-vinho text-white pt-10 pb-20 px-6 lg:pt-20 lg:pb-0 overflow-hidden">
-        <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center">
-            <div class="lg:w-1/2 mb-10 lg:mb-20 z-10 text-center lg:text-left">
-                <h1 class="text-3xl lg:text-6xl mb-6 leading-tight">
-                    Você não precisa "aprender" a ser feminina. <br>
-                    <span class="italic text-dourado">Você precisa retirar o peso que te impede de ser.</span>
-                </h1>
-                <p class="text-lg lg:text-xl mb-8 text-gray-300 font-light">
-                    Uma Mentoria em Grupo de 8 semanas para curar a exaustão da rigidez e invisibilidade, desativar o modo sobrevivência e resgatar a sua feminilidade Rara e Magnética.
-                </p>
-                <a href="https://pay.hub.la/7PqlSfpHRXKDKYmNKyQE" class="inline-block btn-gradiente text-white font-bold py-5 px-10 rounded-full text-center uppercase tracking-wider text-sm lg:text-base">
-                    QUERO FAZER MEU RESGATE AGORA
-                </a>
-                <p class="mt-4 text-xs uppercase tracking-widest text-gray-400">Baseado na Psicodinâmica e no Método DCA.</p>
-            </div>
-            <div class="lg:w-1/2 relative flex justify-center items-end">
-                <div class="absolute inset-0 hero-glow"></div>
-                <!-- Foto Tayssa Machado -->
-                <img src="https://i.ibb.co/C3tsg1b0/Gemini-Generated-Image-2u4a332u4a332u4a-removebg-preview.png" 
-                     alt="Tayssa Machado" 
-                     class="relative z-10 w-full max-w-md lg:max-w-xl h-auto object-cover drop-shadow-2xl">
-            </div>
-        </div>
-    </section>
-
-    <!-- [SEÇÕES 2 A 4 OMITIDAS NO CÓDIGO POR BREVIDADE, MAS MANTIDAS NO CONCEITO] -->
-
-    <!-- SEÇÃO 7: A MENTORA (BIO) -->
-    <section class="py-20 px-6 bg-white overflow-hidden">
-        <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12">
-            <div class="lg:w-1/3">
-                <div class="relative">
-                    <div class="absolute -inset-4 border-2 border-dourado rounded-xl"></div>
-                    <img src="https://i.ibb.co/C3tsg1b0/Gemini-Generated-Image-2u4a332u4a332u4a-removebg-preview.png" 
-                         alt="Tayssa Machado Bio" 
-                         class="relative z-10 w-full bg-vinho rounded-xl grayscale hover:grayscale-0 transition duration-700">
-                </div>
-            </div>
-            <div class="lg:w-2/3">
-                <h2 class="text-4xl text-vinho mb-6 italic">Quem é Tayssa Machado?</h2>
-                <div class="space-y-4 text-gray-700 leading-relaxed text-lg">
-                    <p>Especialista em Feminilidade, Psicodinâmica dos Relacionamentos e Idealizadora do Resgate do Feminino. Mas, antes dos títulos, eu sou uma mulher que conhece a sua dor.</p>
-                    <p>Eu não venho do lugar da "perfeição". Eu venho da Síndrome da Boazinha. Eu já fui a mulher que achava que precisava fazer tudo para ser escolhida, e que vivia relacionamentos onde me sentia sozinha a dois.</p>
-                    <p>Minha virada não veio de truques, mas do mergulho profundo na cura das minhas próprias feridas. Hoje, guio mulheres a fazerem o mesmo caminho: deixarem de ser reféns dos seus traumas para assumirem o trono de suas próprias vidas.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SEÇÃO 8: A OFERTA (COM CONTADOR) -->
-    <section id="oferta" class="py-20 px-6 bg-bege">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl lg:text-5xl text-vinho mb-8 italic">Sua Transformação Começa Agora</h2>
-            
-            <!-- Contador Regressivo -->
-            <div class="mb-12">
-                <p class="text-sm uppercase tracking-widest text-gray-500 mb-4">As inscrições encerram em:</p>
-                <div class="flex justify-center gap-4 text-vinho">
-                    <div class="bg-white p-4 rounded-lg shadow-md min-w-[80px]">
-                        <span id="days" class="block text-3xl font-bold">00</span>
-                        <span class="text-xs uppercase">Dias</span>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg shadow-md min-w-[80px]">
-                        <span id="hours" class="block text-3xl font-bold">00</span>
-                        <span class="text-xs uppercase">Horas</span>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg shadow-md min-w-[80px]">
-                        <span id="minutes" class="block text-3xl font-bold">00</span>
-                        <span class="text-xs uppercase">Min</span>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg shadow-md min-w-[80px]">
-                        <span id="seconds" class="block text-3xl font-bold">00</span>
-                        <span class="text-xs uppercase">Seg</span>
-                    </div>
-                </div>
-                <p class="mt-4 text-vinho font-bold">⚠️ Onboarding Exclusivo em 31 de Janeiro!</p>
-            </div>
-
-            <div class="bg-vinho text-white rounded-3xl p-10 lg:p-16 shadow-2xl relative">
-                <p class="mb-8 text-gray-300">Uma Mentoria Individual comigo tem o investimento de R$ 5.000,00. Mas nesta primeira turma do ano, a condição será especial:</p>
-                <p class="text-sm line-through text-gray-400">De R$ 1.997,00 por apenas:</p>
-                <div class="text-5xl lg:text-7xl font-bold mb-4 text-white">8x R$ 143,70</div>
-                <p class="mb-10 text-lg text-dourado font-semibold">ou R$ 997,00 à vista</p>
-                
-                <a href="https://pay.hub.la/7PqlSfpHRXKDKYmNKyQE" class="block w-full btn-gradiente text-white font-bold py-6 px-8 rounded-xl uppercase tracking-wider text-xl shadow-lg">
-                    QUERO GARANTIR MINHA VAGA AGORA
-                </a>
-                
-                <div class="mt-8 flex flex-wrap justify-center gap-6 text-sm text-gray-400">
-                    <span>✅ 7 Dias de Garantia</span>
-                    <span>🔒 Compra 100% Segura</span>
-                    <span>💳 Parcelamento no Cartão</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA FINAL -->
-    <section class="py-20 text-center px-6 border-t border-gray-200">
-        <p class="text-xl text-vinho italic mb-8">Não deixe sua essência soterrada por mais um ano.</p>
-        <a href="https://pay.hub.la/7PqlSfpHRXKDKYmNKyQE" class="btn-gradiente text-white font-bold py-4 px-12 rounded-full uppercase text-sm tracking-widest">
-            SIM, EU ESCOLHO SER UMA MULHER RARA
-        </a>
-    </section>
-
-    <!-- SCRIPT DO CONTADOR -->
-    <script>
-        function updateCountdown() {
-            // Data alvo: 31 de Janeiro de 2026
-            const targetDate = new Date("January 31, 2026 00:00:00").getTime();
-            const now = new Date().getTime();
-            const gap = targetDate - now;
-
-            const second = 1000;
-            const minute = second * 60;
-            const hour = minute * 60;
-            const day = hour * 24;
-
-            const d = Math.floor(gap / day);
-            const h = Math.floor((gap % day) / hour);
-            const m = Math.floor((gap % hour) / minute);
-            const s = Math.floor((gap % minute) / second);
-
-            document.getElementById("days").innerText = d < 10 ? "0" + d : d;
-            document.getElementById("hours").innerText = h < 10 ? "0" + h : h;
-            document.getElementById("minutes").innerText = m < 10 ? "0" + m : m;
-            document.getElementById("seconds").innerText = s < 10 ? "0" + s : s;
+        body { font-family: 'Montserrat', sans-serif; background-color: var(--bege-luxury); color: #1a1a1a; scroll-behavior: smooth; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 400; }
+        
+        .gold-gradient-text {
+            background: linear-gradient(to right, #C5A059, #F1D197, #C5A059);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
-        setInterval(updateCountdown, 1000);
-        updateCountdown();
-    </script>
-</body>
-</html>
+        .btn-premium {
+            background: linear-gradient(135deg, #C5A059 0%, #A67C37 100%);
+            color: white;
+            letter-spacing: 2px;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .btn-premium:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(166, 124, 55, 0.3);
+            filter: brightness(1.1);
+        }
+
+        .section-divider {
+            width: 80px;
+            height: 1px;
+            background-color: var(--dourado-soft);
+            margin: 2rem auto;
+        }
+
+        .card-border {
+            border: 1px solid rgba(197, 160, 89, 0.3);
+        }
+
+        /* Countdown Style */
+        .timer-unit {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(197, 160, 89, 0.2);
