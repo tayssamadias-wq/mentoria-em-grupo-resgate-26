@@ -4,50 +4,241 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O Resgate do Feminino | Tayssa Machado</title>
+    
+    <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@200;300;400;600&display=swap" rel="stylesheet">
+
     <style>
         :root {
             --vinho-deep: #430F1E;
-            --vinho-bright: #5D182E;
+            --vinho-base: #5D182E;
             --dourado-soft: #C5A059;
             --bege-luxury: #F9F7F2;
         }
-        body { font-family: 'Montserrat', sans-serif; background-color: var(--bege-luxury); color: #1a1a1a; scroll-behavior: smooth; }
-        h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 400; }
-        
-        .gold-gradient-text {
-            background: linear-gradient(to right, #C5A059, #F1D197, #C5A059);
+
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            background-color: var(--bege-luxury); 
+            color: #1a1a1a; 
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+
+        .gold-gradient {
+            background: linear-gradient(135deg, #C5A059 0%, #F1D197 50%, #A67C37 100%);
+        }
+
+        .gold-text {
+            background: linear-gradient(135deg, #C5A059 0%, #F1D197 50%, #A67C37 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
         .btn-premium {
             background: linear-gradient(135deg, #C5A059 0%, #A67C37 100%);
-            color: white;
-            letter-spacing: 2px;
-            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-            border: 1px solid rgba(255,255,255,0.2);
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            letter-spacing: 3px;
+            border: 1px solid rgba(255,255,255,0.1);
         }
 
         .btn-premium:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 30px rgba(166, 124, 55, 0.3);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(166, 124, 55, 0.3);
             filter: brightness(1.1);
         }
 
-        .section-divider {
-            width: 80px;
-            height: 1px;
-            background-color: var(--dourado-soft);
-            margin: 2rem auto;
-        }
-
-        .card-border {
-            border: 1px solid rgba(197, 160, 89, 0.3);
-        }
-
-        /* Countdown Style */
-        .timer-unit {
-            background: rgba(255, 255, 255, 0.03);
+        .premium-border {
             border: 1px solid rgba(197, 160, 89, 0.2);
+        }
+
+        .bg-vinho-premium {
+            background-color: var(--vinho-deep);
+            background-image: radial-gradient(circle at center, #5D182E 0%, #430F1E 100%);
+        }
+
+        /* Custom scrollbar para Premium Feel */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bege-luxury); }
+        ::-webkit-scrollbar-thumb { background: var(--vinho-deep); }
+    </style>
+</head>
+<body>
+
+    <!-- SEÇÃO 1: HERO -->
+    <section class="min-h-[90vh] flex items-center justify-center bg-vinho-premium text-white px-6 py-20 relative">
+        <div class="max-w-5xl mx-auto text-center z-10">
+            <span class="uppercase tracking-[0.5em] text-dourado-soft text-[10px] mb-8 block font-semibold">Uma Mentoria em Grupo Exclusiva</span>
+            
+            <h1 class="text-4xl md:text-6xl lg:text-7xl mb-8 leading-[1.1] font-light">
+                Você não precisa aprender a ser feminina. <br>
+                <span class="italic font-light gold-text">Você precisa retirar o peso que te impede de ser.</span>
+            </h1>
+
+            <div class="w-20 h-[1px] bg-dourado-soft mx-auto mb-10 opacity-50"></div>
+
+            <p class="text-lg md:text-xl mb-12 text-gray-300 max-w-2xl mx-auto font-light leading-relaxed">
+                8 semanas para curar a exaustão da rigidez, desativar o modo sobrevivência e resgatar a sua essência Rara e Magnética.
+            </p>
+
+            <a href="https://pay.hub.la/7PqlSfpHRXKDKYmNKyQE" target="_blank" class="btn-premium px-10 py-6 rounded-none inline-block text-[11px] font-bold uppercase text-white">
+                Iniciar meu Resgate Agora
+            </a>
+
+            <div class="mt-12 flex justify-center items-center gap-4 text-[10px] uppercase tracking-[0.2em] text-gray-500">
+                <span>Método DCA</span>
+                <span class="w-1 h-1 bg-gray-500 rounded-full"></span>
+                <span>Psicodinâmica Clínica</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 2: DIAGNÓSTICO -->
+    <section class="py-24 px-6 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-center text-3xl md:text-5xl text-vinho mb-20 italic font-light">Você está vivendo no "Modo Sobrevivência"?</h2>
+            
+            <div class="grid md:grid-cols-2 gap-0 border border-gray-100">
+                <div class="p-10 border-b md:border-b-0 md:border-r border-gray-100 hover:bg-[#F9F7F2] transition">
+                    <span class="text-dourado-soft text-xs uppercase tracking-widest mb-4 block font-bold">Arquétipo 01</span>
+                    <h3 class="text-2xl mb-6 text-[#430F1E]">A General (Rígida)</h3>
+                    <p class="text-gray-500 font-light leading-relaxed">
+                        O controle é sua armadura. Você resolve tudo, mas sente que se soltar as rédeas, o mundo desaba. Respeitada por todos, cuidada por ninguém.
+                    </p>
+                </div>
+                <div class="p-10 hover:bg-[#F9F7F2] transition">
+                    <span class="text-dourado-soft text-xs uppercase tracking-widest mb-4 block font-bold">Arquétipo 02</span>
+                    <h3 class="text-2xl mb-6 text-[#430F1E]">A Boazinha (Invisível)</h3>
+                    <p class="text-gray-500 font-light leading-relaxed">
+                        Sua doação é um pedido de socorro. Você não sabe dizer "não" e se anula para ser amada. O resultado é a exaustão de ser sempre a última da lista.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 5: O MÉTODO DCA -->
+    <section class="py-24 px-6 bg-[#F9F7F2]">
+        <div class="max-w-6xl mx-auto text-center">
+            <span class="text-dourado-soft text-xs uppercase tracking-[0.4em] block mb-6">A Ciência por trás do Resgate</span>
+            <h2 class="text-4xl md:text-5xl mb-20 italic">O Protocolo de 3 Pilares</h2>
+
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="space-y-4">
+                    <div class="text-4xl text-vinho opacity-30 font-serif italic mb-4">01</div>
+                    <h4 class="text-lg font-bold uppercase tracking-widest">Diagnóstico</h4>
+                    <p class="text-gray-500 text-sm font-light leading-relaxed px-4">Raio-X das feridas emocionais (DFE) que moldaram seu comportamento defensivo.</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="text-4xl text-vinho opacity-30 font-serif italic mb-4">02</div>
+                    <h4 class="text-lg font-bold uppercase tracking-widest">Cura</h4>
+                    <p class="text-gray-500 text-sm font-light leading-relaxed px-4">O processo de retirada da armadura. Ressignificação profunda do sistema nervoso.</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="text-4xl text-vinho opacity-30 font-serif italic mb-4">03</div>
+                    <h4 class="text-lg font-bold uppercase tracking-widest">Ativação</h4>
+                    <p class="text-gray-500 text-sm font-light leading-relaxed px-4">O florescer da Mulher Rara. Magnetismo natural sem esforço ou teatro.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 8: OFERTA & CONTADOR -->
+    <section class="py-24 px-6 bg-vinho-premium text-white relative">
+        <div class="max-w-3xl mx-auto text-center">
+            
+            <!-- Contador -->
+            <div id="countdown" class="mb-16">
+                <p class="text-[10px] uppercase tracking-[0.4em] mb-8 text-dourado-soft">O Onboarding oficial começa em:</p>
+                <div class="flex justify-center gap-4 md:gap-8">
+                    <div class="text-center">
+                        <span id="days" class="text-4xl md:text-5xl font-light block">00</span>
+                        <span class="text-[9px] uppercase tracking-widest text-gray-500">Dias</span>
+                    </div>
+                    <div class="text-center">
+                        <span id="hours" class="text-4xl md:text-5xl font-light block">00</span>
+                        <span class="text-[9px] uppercase tracking-widest text-gray-500">Horas</span>
+                    </div>
+                    <div class="text-center">
+                        <span id="minutes" class="text-4xl md:text-5xl font-light block">00</span>
+                        <span class="text-[9px] uppercase tracking-widest text-gray-500">Minutos</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="premium-border p-8 md:p-16 relative">
+                <h2 class="text-3xl md:text-5xl mb-10 italic font-light">Assuma o seu Trono</h2>
+                
+                <div class="mb-10">
+                    <p class="text-gray-400 text-[10px] uppercase tracking-[0.3em] mb-4">Investimento Especial Turma I</p>
+                    <p class="text-5xl md:text-7xl font-light gold-text mb-4">8x R$ 143,70</p>
+                    <p class="text-gray-400 font-light text-sm">ou R$ 997,00 à vista no PIX</p>
+                </div>
+
+                <a href="https://pay.hub.la/7PqlSfpHRXKDKYmNKyQE" target="_blank" class="btn-premium block w-full py-6 rounded-none text-xs font-bold uppercase text-white shadow-2xl">
+                    Quero Garantir minha Vaga
+                </a>
+
+                <div class="mt-8 opacity-40 text-[9px] uppercase tracking-[0.2em] space-y-2">
+                    <p>Encontros ao Vivo • Grupo VIP • Protocolo DFE</p>
+                    <p>7 dias de garantia incondicional</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 7: BIO -->
+    <section class="py-24 px-6 bg-white border-t border-gray-100">
+        <div class="max-w-2xl mx-auto text-center">
+            <span class="text-dourado-soft text-xs uppercase tracking-[0.5em] block mb-8">A Mentora</span>
+            <h2 class="text-4xl mb-10 italic">Tayssa Machado</h2>
+            <p class="text-gray-500 font-light leading-[2] text-lg italic">
+                "Minha missão não é te ensinar a fingir doçura, mas te curar para que a sua força não precise ser uma armadura. Eu guio mulheres de volta para casa: para a sua própria essência."
+            </p>
+            <p class="mt-10 text-[11px] uppercase tracking-[0.3em] text-vinho font-bold">Especialista em Psicodinâmica dos Relacionamentos</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 text-center text-[10px] text-gray-400 uppercase tracking-widest border-t border-gray-50">
+        &copy; 2026 Tayssa Machado • Todos os direitos reservados.
+    </footer>
+
+    <!-- SCRIPT DO CONTADOR -->
+    <script>
+        function updateCountdown() {
+            // Data do Onboarding: 31 de Janeiro de 2026
+            const targetDate = new Date("January 31, 2026 00:00:00").getTime();
+            const now = new Date().getTime();
+            const gap = targetDate - now;
+
+            if (gap <= 0) {
+                document.getElementById("countdown").innerHTML = "<p class='text-dourado-soft uppercase tracking-widest'>Inscrições Encerradas</p>";
+                return;
+            }
+
+            const second = 1000;
+            const minute = second * 60;
+            const hour = minute * 60;
+            const day = hour * 24;
+
+            const d = Math.floor(gap / day);
+            const h = Math.floor((gap % day) / hour);
+            const m = Math.floor((gap % hour) / minute);
+
+            document.getElementById("days").innerText = d < 10 ? "0" + d : d;
+            document.getElementById("hours").innerText = h < 10 ? "0" + h : h;
+            document.getElementById("minutes").innerText = m < 10 ? "0" + m : m;
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+</body>
+</html>
